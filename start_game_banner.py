@@ -15,21 +15,21 @@ def animation(screen):
     print(text)
     effects = [
         Print(screen,
-        Fire(screen.height, 80, text, 0.4, 40, screen.colours),
-        0,
-        speed=1,
-        transparent=False,
-        ),
+              Fire(screen.height, 80, text, 0.4, 40, screen.colours),
+              0,
+              speed=1,
+              transparent=False,
+              ),
         Print(screen,
-        FigletText("Real Practic Game", "banner"),
-        screen.height - 15,
-        colour=Screen.COLOUR_WHITE,
-        bg=Screen.COLOUR_WHITE,
-        speed=1),
+              FigletText("Real Practic Game", "banner"),
+              screen.height - 15,
+              colour=Screen.COLOUR_WHITE,
+              bg=Screen.COLOUR_WHITE,
+              speed=1),
         Print(screen,
-        SpeechBubble("Please press X - start game"),
-        screen.height-5,
-        speed=1, transparent=False)
+              SpeechBubble("Please press X - start game"),
+              screen.height-5,
+              speed=1, transparent=False)
 
     ]
     scenes.append(Scene(effects, -1))
